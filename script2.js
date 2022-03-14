@@ -12,7 +12,7 @@
             };
         });
     };
-    createWorker('STUST-Club.json')
+    createWorker('./STUST-Club.json')
             .then((data) => {
                 const list = document.getElementsByClassName('list');
                 clubData = data[list.length];
