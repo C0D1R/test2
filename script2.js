@@ -71,6 +71,21 @@
                             </div>
                         </main>
                         `;
+        (clubData[clubIndex].link.length === 0) ? "" : `
+            <div>
+                <div class="main__title">連結</div>
+                <div>
+                    <a href="${clubData[clubIndex].link}">
+                        <img src="./img/${/(?i)Instagram|(?i)IG/.test(clubData[clubIndex].link) ?
+                                    "instagram" :
+                                    /(?i)Facebook|(?i)FB/.test(clubData[clubIndex].link) ?
+                                    "facebook" :
+                                    /(?i)Instagram|(?i)IG/.test(clubData[clubIndex].link) ?
+                                    "line":"#"}.png" alt="">
+                    </a>
+                </div>
+            </div>
+            `;
         document.getElementById('bd').insertBefore(div, document.getElementById('form'));
     }, false);
 })();
