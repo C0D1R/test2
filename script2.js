@@ -65,7 +65,7 @@
                                                     "instagram" :
                                                     /Facebook|FB/gi.test(clubData[clubIndex].link) ?
                                                     "facebook" :
-                                                    /Instagram|IG/gi.test(clubData[clubIndex].link) ?
+                                                    /Line/gi.test(clubData[clubIndex].link) ?
                                                     "line":"#"}.png" alt="">
                                     </a>
                                 </div>
